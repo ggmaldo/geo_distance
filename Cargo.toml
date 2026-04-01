@@ -1,6 +1,10 @@
 [package]
 name = "geo_distance"
 version = "0.1.0"
-edition = "2024"
-
-[dependencies]
+edition = "2021"
+description = "A simple crate for calculating distances between 2D points."
+license = "MIT"
+repository = "https://github.com/ggmaldo/geo_distance"
+readme = "README.md"
+keywords = ["distance", "geometry", "2d"]
+categories = ["mathematics"]
