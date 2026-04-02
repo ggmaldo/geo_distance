@@ -4,6 +4,7 @@ mod tests {
 
     #[test]
     fn test_distance() {
+        /// Body
         let a = Body::<f32>::new(0.0, 0.0);
         let b = Body::<f64>::new(3.0, 4.0);
 
@@ -12,5 +13,13 @@ mod tests {
         assert_eq!(a.chebyshev_distance_to(&b), 4.0);
         assert_eq!(a.distance_to(&b), 5.0);
         assert_eq!(a.is_close_to(&b, f32::EPILSON));
+
+        /// Vector
+        let va = Vector::<f32>::new(0.0, 0.0);
+        let vb = Vector::<f64>::new(3.0, 4.0);
+
+        assert_eq!(va.from_body(a, b));
+        assert_eq!(va.magnitude(vb));
+        assert_eq!(Vector::<f32>::new(6.0, 3.0).magnitude(va));
     }
 }

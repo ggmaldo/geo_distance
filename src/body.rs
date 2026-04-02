@@ -2,8 +2,8 @@ use num_traits::{Float, Pow};
 
 #[derive(Debug, Clone, Copy, PartialEq)]
 pub struct Body<T> {
-    x: T,
-    y: T,
+    pub x: T,
+    pub y: T,
 }
 
 impl<T> Body<T>
