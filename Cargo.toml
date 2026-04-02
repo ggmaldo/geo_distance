@@ -8,3 +8,6 @@ repository = "https://github.com/ggmaldo/geo_distance"
 readme = "README.md"
 keywords = ["distance", "geometry", "2d"]
 categories = ["mathematics"]
+
+[dependencies]
+num-traits = "0.2"
